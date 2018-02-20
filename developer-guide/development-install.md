@@ -116,13 +116,15 @@ Change **<mysql-user-name>** with the database username, typically is **root** b
 
 
 ## Step 6: Setup Directus
-Open `api/config_sample.php` and add the database, username, and password from Step 5 to *DB_NAME*, *DB_USER* and *DB_PASSWORD*. Save the file as `directus/api/config.php`
+1. Open `api/config_sample.php` and add the database, username, and password from Step 5 to *DB_NAME*, *DB_USER* and *DB_PASSWORD*. Save the file as `directus/api/config.php`
 
-```
-define('DB_USER', 		'myusername');
-define('DB_PASSWORD',	'mypassword');
-define('DB_NAME',       'mydatabase');
-```
+    ```
+    define('DB_USER', 		'myusername');
+    define('DB_PASSWORD',	'mypassword');
+    define('DB_NAME',       'mydatabase');
+    ```
+    
+2. Open `api/configuration_sample.php` and change any settings as desired (defaults should be okay in most cases). Save the file as `directus/api/configuration.php`
 
 
 ## Step 7: Setup Files Uploads (Optional)
